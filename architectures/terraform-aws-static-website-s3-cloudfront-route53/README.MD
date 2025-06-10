@@ -6,7 +6,7 @@ This repository contains Terraform configurations to deploy a fully-featured sta
 2. **CloudFront** – CDN distribution (with Origin Access Identity) for HTTPS, caching, and edge delivery  
 3. **Route 53** – DNS records pointing your custom domain to the CloudFront distribution  
 
-Designed for cloud architects, this “flat” layout groups related resources into separate `.tf` files—no modules—so you can trace each piece of the architecture in isolation.
+Designed for cloud architects, this “flat” layout groups related resources into separate `.tf` files no modules so you can trace each piece of the architecture in isolation.
 
 ---
 
