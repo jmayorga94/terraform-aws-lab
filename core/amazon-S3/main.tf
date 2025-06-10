@@ -3,9 +3,9 @@ variable "bucket_name_prefix" {
   description = "S3 bucket name (3–63 chars, lowercase letters, numbers, dots, hyphens; must start/end alphanumeric)"
   validation {
     condition = (
-      length(var.bucket_name) >= 3 &&
-      length(var.bucket_name) <= 63 &&
-      can(regex("^[a-z0-9][a-z0-9.-]+[a-z0-9]$", var.bucket_name))
+      length(var.bucket_name_prefix) >= 3 &&
+      length(var.bucket_name_prefix) <= 63 &&
+      can(regex("^[a-z0-9][a-z0-9.-]+[a-z0-9]$", var.bucket_name_prefix))
     )
     error_message = "Bucket name must be 3–63 chars, lowercase letters/numbers/dots/hyphens, and start/end with a letter or number."
   }
